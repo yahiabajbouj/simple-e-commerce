@@ -79,13 +79,13 @@ export default{
                     this.updateProductAction(this.id).then(res=>{
                         this.$router.push("/product")
                     }).catch(err=>{
-                        console.log(err)
+                        console.warn(err)
                     });
                 }else{
                     this.storeProduct().then(res=>{
                         this.$router.push("/product")
                     }).catch(err=>{
-                        console.log(err)
+                        console.warn(err)
                     });
                 }
             }

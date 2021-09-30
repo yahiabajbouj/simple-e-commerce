@@ -156,13 +156,13 @@ export default{
                     this.updateOrderAction(this.id).then(res=>{
                         this.$router.push("/order")
                     }).catch(err=>{
-                        console.log(err)
+                        console.warn(err)
                     });
                 }else{
                     this.storeOrder().then(res=>{
                         this.$router.push("/order")
                     }).catch(err=>{
-                        console.log(err)
+                        console.warn(err)
                     });
                 }
             }

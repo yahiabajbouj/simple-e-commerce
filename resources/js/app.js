@@ -3,7 +3,6 @@ window.Vue = require("vue");
 import Vue from "vue";
 
 import App from "./App.vue";
-// import axios from "axios";
 import { router } from "./plagin/routes";
 import { store } from "./plagin/store";
 import vuetify from "./plagin/vuetify";

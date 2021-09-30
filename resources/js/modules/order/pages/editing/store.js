@@ -56,7 +56,6 @@ export default {
             state.products = products;
         },
         addItem(state, newItem){
-            console.log(newItem);
             var product_name = state.products.find(it => it.id == newItem.product).product_name;
             var thisItem = undefined;
             let item = {
@@ -65,7 +64,6 @@ export default {
                 quantity: newItem.quantity
             };
             thisItem = state.items.find(it => it.product_id == newItem.product);
-            console.log(thisItem);
             if(!thisItem)
                 state.items.push(item);
         },

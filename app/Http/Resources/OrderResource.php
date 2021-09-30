@@ -16,7 +16,6 @@ class OrderResource extends JsonResource
     {
         $data = parent::toArray($request);
         $data['products'] = $this->products;
-        // $data['products']['pivot'] = $this->products->pivot;
         return $data;
     }
 }

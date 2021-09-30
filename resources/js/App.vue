@@ -14,9 +14,3 @@ export default {
     },
 };
 </script>
-
-<style>
-label {
-    right: auto !important;
-}
-</style>
